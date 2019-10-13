@@ -7,22 +7,16 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-
     int x = 0;
     public void fade(View view){
-
         Log.i("info", "test");
-
         ImageView homerimageView = findViewById(R.id.homerimageView);
         ImageView bartimageView = findViewById(R.id.bartimageView);
-
         if(x % 2 == 0) {
-
             homerimageView.animate().alpha(0).setDuration(2000);
             bartimageView.animate().alpha(1).setDuration(2000);
             x++;
         }else{
-
             bartimageView.animate().alpha(0).setDuration(2000);
             homerimageView.animate().alpha(1).setDuration(2000);
             x++;
