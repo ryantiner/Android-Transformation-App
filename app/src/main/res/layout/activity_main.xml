@@ -10,7 +10,7 @@
         android:id="@+id/homerimageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:alpha="0"
+
         android:onClick="fade"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +24,7 @@
         android:id="@+id/bartimageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0"
         android:onClick="fade"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
