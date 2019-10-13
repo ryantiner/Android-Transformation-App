@@ -13,17 +13,18 @@ public class MainActivity extends AppCompatActivity {
 
          Log.i("info", "test");
 
+        ImageView homerimageView = findViewById(R.id.homerimageView);
         ImageView bartimageView = findViewById(R.id.bartimageView);
 
-        ImageView homerimageView = findViewById(R.id.homerimageView);
-
         if(x % 2 == 0) {
-            bartimageView.animate().alpha(0).setDuration(2000);
-            homerimageView.animate().alpha(1).setDuration(2000);
-              x++;
-        }else{
+
             homerimageView.animate().alpha(0).setDuration(2000);
             bartimageView.animate().alpha(1).setDuration(2000);
+            x++;
+        }else{
+
+            bartimageView.animate().alpha(0).setDuration(2000);
+            homerimageView.animate().alpha(1).setDuration(2000);
             x++;
 
         }
