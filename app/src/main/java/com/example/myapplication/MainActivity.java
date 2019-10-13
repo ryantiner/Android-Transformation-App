@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     int x = 0;
     public void fade(View view){
 
-         Log.i("info", "test");
+        Log.i("info", "test");
 
         ImageView homerimageView = findViewById(R.id.homerimageView);
         ImageView bartimageView = findViewById(R.id.bartimageView);
@@ -26,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
             bartimageView.animate().alpha(0).setDuration(2000);
             homerimageView.animate().alpha(1).setDuration(2000);
             x++;
-
         }
-
-
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
